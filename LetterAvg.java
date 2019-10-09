@@ -55,5 +55,18 @@ public class LetterAvg {
         listOfStations[numStations]= x;
         numStations++;
     }
+	public int numberOfStationWithLetterAvg() {
+		
+		int l = 0;
+		for(int i = 0; i < numStations; i++) {
+			if(listOfStations[i].charAt(0) == m) {
+				listOfSameStations[l] = listOfStations[i];
+				l++;
+			}
+		}
+		return l;
+		
+	}
+	
 
 }
