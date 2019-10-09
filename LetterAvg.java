@@ -67,6 +67,17 @@ public class LetterAvg {
 		return l;
 		
 	}
+	public String toString() {
+		String begin = "\n" + "They are:" + "\n";
+		String stations = "";
+		int numSameStations = numberOfStationWithLetterAvg();
+		for (int i = 0; i < numSameStations - 1; ++i)
+		{
+			stations += listOfSameStations[i] + "\n";
+		}
+		stations += listOfSameStations[numSameStations - 1];
+		return  begin + stations;
+	}
 	
 
 }
