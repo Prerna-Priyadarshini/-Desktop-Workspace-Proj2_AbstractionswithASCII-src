@@ -81,7 +81,11 @@ public class PosAvg {
 		
 		return result;
 	}
-	
+	public String toString() {
+		String[] idNames = findSameAvgStations();
+		String result = "This index is average of " + idNames[0] + " and " + idNames[1] + ", " + idNames[2] + " and " + idNames[3] + ", and so on.";
+		return result;
+	}
 	
 	
 	
